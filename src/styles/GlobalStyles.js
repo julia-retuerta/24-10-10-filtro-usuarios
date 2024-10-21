@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: sans-serif;
 }
 
 img {
