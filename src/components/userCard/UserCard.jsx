@@ -1,4 +1,5 @@
 import {
+  StyledActive,
   StyledImgNameUsername,
   StyledName,
   StyledNameUsername,
@@ -18,7 +19,7 @@ const UserCard = ({ profileImage, name, username, active }) => {
         </StyledNameUsername>
       </StyledImgNameUsername>
 
-      <span>{active ? 'Activo' : 'Inactivo'}</span>
+      <StyledActive $active={active}>{active ? 'Activo' : 'Inactivo'}</StyledActive>
       <button>Ver detalles</button>
     </StyledUserCard>
   );

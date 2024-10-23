@@ -36,4 +36,16 @@ const StyledUsername = styled.p`
   margin: 0;
 `;
 
-export { StyledUserCard, StyledImgNameUsername, StyledNameUsername, StyledUserImg, StyledName, StyledUsername };
+const StyledActive = styled.span`
+  color: ${({ $active }) => ($active ? '#13b176' : '#ce3131')};
+`;
+
+export {
+  StyledUserCard,
+  StyledImgNameUsername,
+  StyledNameUsername,
+  StyledUserImg,
+  StyledName,
+  StyledUsername,
+  StyledActive
+};

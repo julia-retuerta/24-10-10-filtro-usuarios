@@ -1,10 +1,9 @@
-import { USERS } from '../../constants/users';
 import UserCard from '../userCard/UserCard';
 
-const UserList = () => {
+const UserList = ({ users }) => {
   return (
     <>
-      {USERS.map(user => (
+      {users.map(user => (
         <UserCard
           key={user.userId}
           profileImage={user.profileImage}
